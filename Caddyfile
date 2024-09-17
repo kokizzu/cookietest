@@ -1,7 +1,10 @@
 
 console.local.benalu.dev {
     tls internal
-    reverse_proxy localhost:13000
+    file_server browse {
+        root ./console
+        index index.html
+    }
 }
 sts.local.benalu.dev {
     tls internal

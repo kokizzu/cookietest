@@ -10,9 +10,6 @@ caddy run
 # install autorecompile
 go install github.com/air-verse/air
 
-cd console
-air
-
 cd sts
 air
 ```
