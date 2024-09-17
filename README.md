@@ -5,7 +5,7 @@
 caddy run
 # if blocked by browser
 # firefox > Advanced > click the certificate, download the PEM (not chain)
-# Settings > Advanced > Certificates > Import ^
+# Settings > Privacy > Certificates > View Certificates > Import the pem above
 
 # install autorecompile
 go install github.com/air-verse/air
