@@ -5,7 +5,6 @@ import (
 	"log"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/recover"
 )
@@ -19,10 +18,6 @@ func main() {
 	})
 	app.Use(recover.New())
 	app.Use(logger.New())
-	corsRule := cors.ConfigDefault
-	corsRule.AllowCredentials = true // required
-	corsRule.AllowOrigins = "https://console.local.benalu.dev"
-	app.Use(cors.New(corsRule))
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		c.Set("Content-Type", "text/html")
