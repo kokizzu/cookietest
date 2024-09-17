@@ -17,5 +17,6 @@ cd sts
 air
 ```
 
-open the https://console.local.benalu.dev afterward and click
+open the https://console.local.benalu.dev afterward and click the button, inspect element
+
 ![image](https://github.com/user-attachments/assets/adea3a47-bbdb-4752-9b9d-e65c6b7ad5a8)
