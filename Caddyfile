@@ -1,0 +1,9 @@
+
+console.local.benalu.dev {
+    tls internal
+    reverse_proxy localhost:13000
+}
+sts.local.benalu.dev {
+    tls internal
+    reverse_proxy localhost:13001
+}

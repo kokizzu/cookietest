@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>dummy console</title>
+</head>
+<body>
+<script>
+	function hitSts() {
+		fetch('https://sts.local.benalu.dev',{
+			mode:'cors',
+			credentials:'include',
+		}).then(res => res.text()).then(console.log)
+	}
+</script>
+<button onclick="hitSts()">Hit Sts</button>
+</body>
+</html>

@@ -28,12 +28,14 @@ func main() {
 			Name:     "test",
 			Value:    strconv.Itoa(intVal + 1),
 			Path:     "/",
-			Domain:   ".local.benalu.dev",
+			Domain:   "sts.local.benalu.dev",
 			Secure:   true,
 			HTTPOnly: true,
 			SameSite: "Lax",
 		})
-		return c.SendString("Hello, World!")
+		return c.JSON(struct {
+			Count int `json:"count"`
+		}{intVal})
 	})
 
 	log.Fatal(app.Listen(":13001"))
