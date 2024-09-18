@@ -6,6 +6,7 @@
 <script>
 	function hitSts() {
 		fetch('https://sts.local.benalu.dev',{
+			method: 'POST',
 			mode:'cors',
 			credentials:'include',
 		}).then(res => res.text()).then(console.log)

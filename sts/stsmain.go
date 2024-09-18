@@ -21,7 +21,7 @@ func main() {
 	corsRule.AllowOrigins = "https://console.local.benalu.dev"
 	app.Use(cors.New(corsRule))
 
-	app.Get("/", func(c *fiber.Ctx) error {
+	app.All("/", func(c *fiber.Ctx) error {
 		strVal := c.Cookies("test", "0")
 		intVal, _ := strconv.Atoi(strVal)
 		c.Cookie(&fiber.Cookie{
