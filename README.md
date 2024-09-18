@@ -1,5 +1,5 @@
 
-# test httpOnly secure cookie
+# Example for cross-origin httpOnly secure cookie
 
 ```shell
 caddy run
